@@ -6,19 +6,33 @@ const navigation = (): VerticalNavItemsType => {
     {
       title: 'Home',
       path: '/home',
-      icon: 'tabler:smart-home',
+      icon: 'tabler:smart-home'
+    },
+    {
+      title: 'Components',
+      icon: 'tabler:archive',
+      children: [
+        {
+          title: 'Buttons',
+          path: '/components/buttons'
+        },
+        {
+          title: 'Text Field',
+          path: '/components/form/text-field'
+        }
+      ]
     },
     {
       title: 'Second Page',
       path: '/second-page',
-      icon: 'tabler:mail',
+      icon: 'tabler:mail'
     },
     {
       path: '/acl',
       action: 'read',
       subject: 'acl-page',
       title: 'Access Control',
-      icon: 'tabler:shield',
+      icon: 'tabler:shield'
     }
   ]
 }
